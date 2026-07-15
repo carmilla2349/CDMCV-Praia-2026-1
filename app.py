@@ -67,8 +67,9 @@ def verificar_vencedor():
     for a, b in LINHAS_VENCEDORAS:
         cor_a = st.session_state.tabuleiro[a]
         cor_b = st.session_state.tabuleiro[b]
+        cor_c = st.session_state.tabuleiro[c]
 
-        if cor_a != "vazio" and cor_a == cor_b:
+        if cor_a != "vazio" and cor_a == cor_b and cor_b == cor_c and cor_a == cor_c:
             return st.session_state.jogador
 
     return None
