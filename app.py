@@ -104,7 +104,7 @@ garantir_estado_inicial()
 
 st.title("🎀 Jogo do Semáforo (APENAS PARA DIVAS!) 3x4 🎀")
 st.write("Clique numa célula para mudar a cor: vazio → verde → amarelo → vermelho.")
-st.write("Vence quem formar duas células iguais, não pretas, numa linha, coluna ou diagonal.")
+st.write("Vence quem formar duas células iguais, não pretas, numa linha, coluna ou diagonal. Lets go diva!")
 
 if st.session_state.vencedor is None:
     st.info(f"Vez do Jogador {st.session_state.jogador}")
@@ -154,7 +154,7 @@ with col4:
         use_container_width=True,
     )
 
-col5, col6, col7, col9 = st.columns(4)
+col5, col6, col7, col8 = st.columns(4)
 
 with col5:
     st.button(
