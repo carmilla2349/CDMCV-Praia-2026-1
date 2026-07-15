@@ -115,8 +115,8 @@ if st.session_state.mensagem:
     st.warning(st.session_state.mensagem)
 
 
-# Desenho simples do tabuleiro 2x2.
-col1, col2, col3, col4 = st.columns(2)
+
+col1, col2, col3, col4 = st.columns(4)
 
 with col1:
     st.button(
@@ -136,8 +136,6 @@ with col2:
         use_container_width=True,
     )
 
-col3, col4 = st.columns(2)
-
 with col3:
     st.button(
         SIMBOLOS[st.session_state.tabuleiro[2]],
@@ -156,6 +154,7 @@ with col4:
         use_container_width=True,
     )
 
+col5, col6, col7, col9 = st.columns(4)
 with col5:
     st.button(
         SIMBOLOS[st.session_state.tabuleiro[4]],
@@ -191,6 +190,8 @@ with col8:
         args=(7,),
         use_container_width=True,
     )
+
+col9, col10, col11, col12 = st.columns(4)
 with col9:
     st.button(
         SIMBOLOS[st.session_state.tabuleiro[8]],
@@ -228,4 +229,4 @@ with col12:
     )
 
 
-st.button("Novo jogo", on_click=iniciar_jogo)
+st.button("🎀", on_click=iniciar_jogo)
