@@ -1,10 +1,10 @@
 import streamlit as st
 
 
-# App simples para demonstrar a lógica do Jogo do Semáforo 2x2.
+# App simples para demonstrar a lógica do Jogo do Semáforo 3x4.
 # Objetivo: mostrar mudança de cor, alternância de jogadores e vencedor.
 
-st.set_page_config(page_title="Semáforo 2x2 - Tutorial", page_icon="🚦")
+st.set_page_config(page_title="Semáforo 3x4 - Tutorial", page_icon="🚦")
 
 
 # Ordem das cores do jogo.
@@ -26,9 +26,9 @@ PROXIMA_COR = {
     "vermelho": "vermelho",
 }
 
-# Num tabuleiro 2x2, estas são todas as linhas, colunas e diagonais.
+# Num tabuleiro 3x4, estas são todas as linhas, colunas e diagonais.
 LINHAS_VENCEDORAS = [
-    (0,1,2)
+    (0, 1, 2)
     (2, 5, 8)
     (0, 5, 10)
     (1, 6,11)
