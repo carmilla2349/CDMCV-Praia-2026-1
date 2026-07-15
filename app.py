@@ -28,7 +28,7 @@ PROXIMA_COR = {
 
 # Num tabuleiro 2x2, estas são todas as linhas, colunas e diagonais.
 LINHAS_VENCEDORAS = [
-    (0, 1, 2)
+    (0,1,2)
     (2, 5, 8)
     (0, 5, 10)
     (1, 6,11)
