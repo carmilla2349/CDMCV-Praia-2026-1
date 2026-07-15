@@ -4,7 +4,7 @@ import streamlit as st
 # App simples para demonstrar a lógica do Jogo do Semáforo 3x4.
 # Objetivo: mostrar mudança de cor, alternância de jogadores e vencedor.
 
-st.set_page_config(page_title="Semáforo 3x4 - Tutorial", page_icon="🚦")
+st.set_page_config(page_title="Semáforo 3x4 - Tutorial", page_icon="🚦💅")
 
 
 # Ordem das cores do jogo.
@@ -232,4 +232,4 @@ with col12:
     )
 
 
-st.button("🎀", on_click=iniciar_jogo)
+st.button("🎀 Voltar a Jogar 🎀", on_click=iniciar_jogo)
