@@ -13,9 +13,9 @@ CORES = ["vazio", "verde", "amarelo", "vermelho"]
 # Como cada cor é mostrada no ecrã.
 SIMBOLOS = {
     "vazio": " ",
-    "verde": "🟢",
-    "amarelo": "🟡",
-    "vermelho": "🔴",
+    "verde": "💚",
+    "amarelo": "💛",
+    "vermelho": "💗",
 }
 
 # Próxima cor de cada célula.
