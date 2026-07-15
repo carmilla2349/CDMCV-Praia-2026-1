@@ -64,7 +64,7 @@ def garantir_estado_inicial():
 
 def verificar_vencedor():
     """Verifica se há duas células não pretas iguais numa linha, coluna ou diagonal."""
-    for a, b in LINHAS_VENCEDORAS:
+    for a, b, c in LINHAS_VENCEDORAS:
         cor_a = st.session_state.tabuleiro[a]
         cor_b = st.session_state.tabuleiro[b]
         cor_c = st.session_state.tabuleiro[c]
