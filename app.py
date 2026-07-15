@@ -28,18 +28,28 @@ PROXIMA_COR = {
 
 # Num tabuleiro 2x2, estas são todas as linhas, colunas e diagonais.
 LINHAS_VENCEDORAS = [
-    (0, 1),  # primeira linha
-    (2, 3),  # segunda linha
-    (0, 2),  # primeira coluna
-    (1, 3),  # segunda coluna
-    (0, 3),  # diagonal principal
-    (1, 2),  # diagonal secundária
+    (0, 1, 2)
+    (2, 5, 8)
+    (0, 5, 10)
+    (1, 6,11)
+    (0, 4, 8)
+    (1, 2, 3)
+    (1, 5, 9)
+    (2, 6, 10)
+    (3, 7, 11)
+    (3, 6, 9)
+    (5, 6, 7)
+    (9, 10, 11)
+    (8, 9, 10)
+    (4, 5, 6)
+    
+    
 ]
 
 
 def iniciar_jogo():
     """Coloca o jogo no estado inicial."""
-    st.session_state.tabuleiro = ["vazio", "vazio", "vazio", "vazio"]
+    st.session_state.tabuleiro = ["vazio", "vazio", "vazio", "vazio","vazio", "vazio", "vazio", "vazio","vazio", "vazio", "vazio", "vazio"]
     st.session_state.jogador = 1
     st.session_state.vencedor = None
     st.session_state.mensagem = None
@@ -92,7 +102,7 @@ def jogar(posicao):
 
 garantir_estado_inicial()
 
-st.title("🚦 Jogo do Semáforo 2x2")
+st.title("🎀 Jogo do Semáforo (APENAS PARA DIVAS!) 3x4 🎀")
 st.write("Clique numa célula para mudar a cor: vazio → verde → amarelo → vermelho.")
 st.write("Vence quem formar duas células iguais, não pretas, numa linha, coluna ou diagonal.")
 
@@ -143,6 +153,77 @@ with col4:
         key="celula_3",
         on_click=jogar,
         args=(3,),
+        use_container_width=True,
+    )
+
+with col5:
+    st.button(
+        SIMBOLOS[st.session_state.tabuleiro[4]],
+        key="celula_4",
+        on_click=jogar,
+        args=(4,),
+        use_container_width=True,
+    )
+
+with col6:
+    st.button(
+        SIMBOLOS[st.session_state.tabuleiro[5]],
+        key="celula_5",
+        on_click=jogar,
+        args=(5,),
+        use_container_width=True,
+    )
+
+with col7:
+    st.button(
+        SIMBOLOS[st.session_state.tabuleiro[6]],
+        key="celula_6",
+        on_click=jogar,
+        args=(6,),
+        use_container_width=True,
+    )
+
+with col8:
+    st.button(
+        SIMBOLOS[st.session_state.tabuleiro[7]],
+        key="celula_7",
+        on_click=jogar,
+        args=(7,),
+        use_container_width=True,
+    )
+    with col9:
+    st.button(
+        SIMBOLOS[st.session_state.tabuleiro[8]],
+        key="celula_8",
+        on_click=jogar,
+        args=(8,),
+        use_container_width=True,
+    )
+
+with col10:
+    st.button(
+        SIMBOLOS[st.session_state.tabuleiro[9]],
+        key="celula_9",
+        on_click=jogar,
+        args=(9,),
+        use_container_width=True,
+    )
+
+with col11:
+    st.button(
+        SIMBOLOS[st.session_state.tabuleiro[10]],
+        key="celula_10",
+        on_click=jogar,
+        args=(10,),
+        use_container_width=True,
+    )
+
+with col12:
+    st.button(
+        SIMBOLOS[st.session_state.tabuleiro[11]],
+        key="celula_11",
+        on_click=jogar,
+        args=(11,),
         use_container_width=True,
     )
 
