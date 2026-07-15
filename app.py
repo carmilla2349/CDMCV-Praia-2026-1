@@ -116,7 +116,7 @@ if st.session_state.mensagem:
 
 
 # Desenho simples do tabuleiro 2x2.
-col1, col2 = st.columns(2)
+col1, col2, col3, col4 = st.columns(4)
 
 with col1:
     st.button(
