@@ -155,6 +155,7 @@ with col4:
     )
 
 col5, col6, col7, col9 = st.columns(4)
+
 with col5:
     st.button(
         SIMBOLOS[st.session_state.tabuleiro[4]],
@@ -192,6 +193,7 @@ with col8:
     )
 
 col9, col10, col11, col12 = st.columns(4)
+
 with col9:
     st.button(
         SIMBOLOS[st.session_state.tabuleiro[8]],
