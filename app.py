@@ -191,7 +191,7 @@ with col8:
         args=(7,),
         use_container_width=True,
     )
-    with col9:
+with col9:
     st.button(
         SIMBOLOS[st.session_state.tabuleiro[8]],
         key="celula_8",
